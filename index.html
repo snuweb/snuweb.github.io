@@ -3,29 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Your Name | Developer</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
+  <header class="header">
+    <h1 class="logo">
+      <a href="#">Your Name</a>
+    </h1>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
+
   <main>
-    <section id="about">
+    <section class="hero" id="about">
       <h2>About Me</h2>
-      <p>I'm a MERN stack web developer...</p>
+      <p>I am a passionate developer with X years of experience in building web applications and websites. I have a strong foundation in (mention core technologies like HTML, CSS, JavaScript) and a keen interest in (mention areas of interest like front-end frameworks, back-end development). I am always eager to learn new things and stay up-to-date with the latest technologies.</p>
+      <a href="#" class="btn">Download Resume</a>
     </section>
-    <section id="projects">
-      <h2>My Projects</h2>
-      <!-- Add project details here -->
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>
+          <i class="fa fa-code"></i> HTML & CSS
+        </li>
+        <li>
+          <i class="fa fa-code"></i> JavaScript
+        </li>
+        <li>
+          <i class="fa fa-database"></i> (Database technologies, e.g., MySQL, PostgreSQL)
+        </li>
+        <li>
+          <i class="fa fa-cubes"></i> (Front-end frameworks, e.g., React, Vue.js)
+        </li>
+      </ul>
     </section>
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: example@example.com</p>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Project Title</h3>
+        <p>A brief description of your project and its key features.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out to me for any inquiries or project opportunities.</p>
+      <ul class="contact-info">
+        <li><i class="fa fa-envelope"></i> youremail@example.com</li>
+        <li><i class="fa fa-linkedin"></i> <a href="#">Your LinkedIn Profile</a></li>
+        <li><i class="fa fa-github"></i> <a href="#">Your Github Profile</a></li>
+      </ul>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2024 My Portfolio</p>
+
+  <footer class="footer">
+    <p>&copy; 2024 Your Name</p>
   </footer>
-</body>
+
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit-code.js" crossorigin="anonymous"></script>
+  </body>
 </html>
