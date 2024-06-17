@@ -4,14 +4,38 @@ body {
     padding: 0;
     background: #f0f0f0;
     color: #333;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 header {
-    display: flex;
     background: #4CAF50;
     color: white;
     padding: 2em 0;
     text-align: center;
+    position: relative;
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 section {
@@ -20,6 +44,11 @@ section {
     max-width: 800px;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.05);
 }
 
 h2 {
@@ -34,14 +63,24 @@ ul {
 
 li {
     padding: 0.5em 0;
+    animation: fadeIn 2s ease-in;
 }
 
 .project {
     margin-bottom: 1em;
+    animation: fadeInUp 1s ease-in-out;
 }
 
-.project h3 {
-    margin: 0;
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 footer {
@@ -52,4 +91,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    animation: fadeIn 2s ease-in;
 }
