@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f0f0;
+    background: #f4f4f9;
+    /* Softer background color */
     color: #333;
     animation: fadeIn 1s ease-in;
 }
@@ -18,12 +19,17 @@ body {
 }
 
 header {
-    background: #4CAF50;
+    background: #6c757d;
+    /* Soft grey background */
     color: white;
     padding: 2em 0;
     text-align: center;
     position: relative;
     animation: slideDown 1s ease-in-out;
+    border-radius: 15px;
+    /* Rounded corners */
+    margin: 20px;
+    /* Adding some margin */
 }
 
 @keyframes slideDown {
@@ -45,6 +51,8 @@ section {
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    border-radius: 15px;
+    /* Rounded corners */
 }
 
 section:hover {
@@ -52,7 +60,8 @@ section:hover {
 }
 
 h2 {
-    border-bottom: 2px solid #4CAF50;
+    border-bottom: 2px solid #6c757d;
+    /* Matching the header color */
     padding-bottom: 0.5em;
 }
 
@@ -86,7 +95,8 @@ li {
 footer {
     text-align: center;
     padding: 1em 0;
-    background: #333;
+    background: #343a40;
+    /* Darker grey background */
     color: white;
     position: fixed;
     width: 100%;
