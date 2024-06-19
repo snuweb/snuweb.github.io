@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f9;
+    background: #f0f0f0;
     /* Softer background color */
     color: #333;
     animation: fadeIn 1s ease-in;
@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background: #6c757d;
+    background: #f0f0f0;
     /* Soft grey background */
     color: white;
     padding: 2em 0;
