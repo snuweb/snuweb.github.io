@@ -1,68 +1,40 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f0f0f0;
-    /* Softer background color */
+    background-color: #f4f4f9;
     color: #333;
-    animation: fadeIn 1s ease-in;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
+/* Header styles */
 header {
-    background: #1c1c1c;
-    /* Soft grey background */
-    color: white;
+    background-color: #c1c1c1;
+    /* Light grey background */
+    color: #333;
     padding: 2em 0;
     text-align: center;
-    position: relative;
-    animation: slideDown 1s ease-in-out;
-    border-radius: 15px;
-    /* Rounded corners */
-    margin: 20px;
-    /* Adding some margin */
 }
 
-@keyframes slideDown {
-    from {
-        top: -50px;
-        opacity: 0;
-    }
-
-    to {
-        top: 0;
-        opacity: 1;
-    }
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
+header p {
+    font-size: 1.2em;
+}
+
+/* Section styles */
 section {
     padding: 2em;
-    margin: 1em auto;
-    max-width: 800px;
-    background: white;
-    box-shadow: 0 0 10px ddrgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    border-radius: 15px;
-    /* Rounded corners */
 }
 
-section:hover {
-    transform: scale(1.05);
-}
-
-h2 {
-    border-bottom: 2px solid #6c757d;
-    /* Matching the header color */
-    padding-bottom: 0.5em;
+section h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #444;
 }
 
 ul {
@@ -72,12 +44,59 @@ ul {
 
 li {
     padding: 0.5em 0;
+    background: #e0e0e0;
+    margin: 0.5em 0;
+    border-radius: 5px;
     animation: fadeIn 2s ease-in;
 }
 
+/* Project styles */
 .project {
     margin-bottom: 1em;
+    padding: 1em;
+    background: #e0e0e0;
+    border-radius: 5px;
     animation: fadeInUp 1s ease-in-out;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project p {
+    margin-bottom: 1em;
+}
+
+.project a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    animation: fadeIn 2s ease-in;
+}
+
+/* Animation styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInUp {
@@ -90,16 +109,4 @@ li {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background: #c1c1c1;
-    /* Darker grey background */
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    animation: fadeIn 2s ease-in;
 }
