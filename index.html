@@ -1,30 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>Saadaq Nur - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <div class="profile">
-            <img src="images/p2.png" alt="Profile Picture" class="profile-pic" />
-            <div class="profile-info">
-                <p>
-                    Hi, I'm Saadaq, a full-stack developer with a strong
-                    focus on backend development. I specialize in creating
-                    robust and scalable server-side, Goications.
-                </p>
-                <p class="address">Austria, Feldkirch</p>
-            </div>
+            <img src="images/p2.png" alt="Profile Picture" class="profile-pic">
+            <h1>Saadaq Nur</h1>
+            <p class="subtitle">Full-Stack Developer & AI Enthusiast</p>
+            <p class="location">Feldkirch, Austria</p>
         </div>
     </header>
 
     <nav>
         <ul>
+            <li><a href="#about" class="button">About</a></li>
             <li><a href="#skills" class="button">Skills</a></li>
             <li><a href="#projects" class="button">Projects</a></li>
             <li><a href="#contact" class="button">Contact</a></li>
@@ -32,53 +27,55 @@
     </nav>
 
     <main>
-        <section id="skills">
-            <h2>My Skills</h2>
-            <div class="skills-container">
-                <div class="skill">C#, Go </div>
-                <div class="skill">HTML, CSS, JavaScript, MySQL</div>
-                <div class="skill">Scripting</div>
-                <div class="skill">RESTful API Development</div>
-                <div class="skill">Git and GitHub</div>
-            </div>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Saadaq, a full-stack developer with a passion for backend development and AI technologies. I
+                specialize in creating robust and scalable server-side applications, and I'm constantly exploring new
+                advancements in artificial intelligence.
+            </p>
         </section>
 
-        <!--<section id="projects">-->
-        <!--    <h2>Projects</h2>-->
-        <!--    <div class="project">-->
-        <!--        <h3>To-Do List API</h3>-->
-        <!--        <!--<p>-->
-        <!--        <!--    A simple REST API for managing a to-do list, built with-->
-        <!--        <!--    Go.-->
-        <!--        <!--</p>-->
-        <!--        <a href="https://github.com/snuweb/todo-api" target="_blank">View on GitHub</a>-->
-        <!--    </div>-->
-        <!--</section>-->
-        <!---->
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>C#, Go</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>MySQL, RESTful APIs</li>
+                <li>Scripting and Automation</li>
+                <li>Git, GitHub</li>
+                <li>Artificial Intelligence Concepts</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3><a href="https://github.com/snuweb/todo-api" target="_blank">To-Do List API</a></h3>
+                <p>
+                    A simple RESTful API for managing a to-do list, built with Go. This project demonstrates my ability
+                    to create efficient backend services.
+                </p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
         <section id="contact">
-            <h2>Contact</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/saadaq-nuur-75a314228/" target="_blank">Saadaq
+                        Nur</a></li>
+                <li>GitHub: <a href="https://github.com/snuweb" target="_blank">snuweb</a></li>
+                <li>Skype: <a href="https://join.skype.com/invite/zI4mdZbgbnF0" target="_blank">Join on Skype</a></li>
+            </ul>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Saadaq Nur</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/saadaq-nuur-75a314228/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/snuweb" target="_blank">GitHub</a>
-            <a href="https://join.skype.com/invite/zI4mdZbgbnF0" target="_blank">Skype</a>
-        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 
 </html>

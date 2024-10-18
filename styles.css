@@ -1,274 +1,112 @@
-/* General styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f5f5f5;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #1c1c1c;
-    color: #f4f4f9;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-main {
-    flex: 1;
-}
-
-/* Header styles */
 header {
-    background-color: #3ed09a;
-    color: #1c1c1c;
+    text-align: center;
     padding: 2em 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.5s ease;
-}
-
-header:hover {
-    background-color: #2da77c;
-    /* Darker green on hover */
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    background-color: #222;
+    color: #fff;
 }
 
 .profile-pic {
     width: 150px;
-    height: 150px;
     border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #1c1c1c;
-    transition: transform 0.5s ease;
 }
 
-.profile-pic:hover {
-    transform: scale(1.1);
+h1 {
+    margin: 0.5em 0 0.2em;
+    font-size: 2em;
 }
 
-.profile-info {
-    text-align: left;
-}
-
-.profile-info h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #fff;
-}
-
-.profile-info p {
+.subtitle {
     font-size: 1.2em;
-    margin: 0.2em 0;
+    color: #ccc;
 }
 
-.profile-info .address {
+.location {
     font-size: 1em;
-    color: #fff;
+    color: #999;
 }
 
-/* Navigation styles */
+nav {
+    background-color: #333;
+}
+
 nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #1c1c1c;
+}
+
+nav li {
     margin: 0;
-    transition: background-color 0.5s ease;
-    gap: 10px;
-    /* Add spacing between buttons */
 }
 
-nav ul li {
-    margin: 0 1em;
-}
-
-nav ul li .button {
-    text-decoration: none;
-    color: #1c1c1c;
-    background-color: #3ed09a;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition:
-        background-color 0.3s ease,
-        color 0.3s ease;
-}
-
-nav ul li .button:hover {
-    background-color: #2da77c;
+nav a {
+    display: block;
+    padding: 1em 2em;
     color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Section styles */
-section {
-    padding: 2em;
+nav a:hover {
+    background-color: #444;
+}
+
+main {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 2em auto;
+    padding: 0 1em;
 }
 
-section h2 {
-    font-size: 2em;
+section {
+    margin-bottom: 3em;
+}
+
+h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5em;
     margin-bottom: 1em;
-    color: #3ed09a;
 }
 
-ul {
+.skills-list {
+    list-style: square inside;
+    padding-left: 1em;
+}
+
+.project {
+    margin-bottom: 2em;
+}
+
+.project h3 {
+    margin-bottom: 0.5em;
+}
+
+.project p {
+    margin-top: 0;
+}
+
+.contact-info {
     list-style: none;
     padding: 0;
 }
 
-/* Skills styles */
-.skills-container {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    border: 1px solid #3ed09a;
-    overflow: hidden;
+.contact-info li {
+    margin-bottom: 0.5em;
 }
 
-.skill {
-    position: absolute;
-    padding: 1em;
-    background: #01aed8;
-    color: #f4f4f9;
-    border-radius: 5px;
-    cursor: pointer;
-    transition:
-        transform 0.3s,
-        background-color 0.3s,
-        opacity 0.3s;
-}
-
-.skill:hover {
-    transform: scale(1.2);
-    z-index: 1;
-}
-
-/* Project styles */
-.project {
-    margin-bottom: 1em;
-    padding: 1em;
-    background: #333;
-    border-radius: 5px;
-    animation: fadeInUp 1s ease-in-out;
-}
-
-.project h3 {
-    margin-top: 0;
-    color: #3ed09a;
-}
-
-.project p {
-    margin-bottom: 1em;
-    color: #f4f4f9;
-}
-
-.project a {
-    color: #3ed09a;
-    text-decoration: none;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
-/* Contact form styles */
-form {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2em;
-    /* Added margin-bottom to prevent overlap */
-}
-
-form label {
-    margin-top: 1em;
-    color: #3ed09a;
-}
-
-form input,
-form textarea {
-    padding: 0.5em;
-    margin-top: 0.5em;
-    border: 1px solid #3ed09a;
-    border-radius: 5px;
-    background: #333;
-    color: #f4f4f9;
-}
-
-form button {
-    margin-top: 1em;
-    padding: 0.5em;
-    border: none;
-    border-radius: 20px;
-    background: #3ed09a;
-    color: #1c1c1c;
-    cursor: pointer;
-    transition:
-        background-color 0.5s ease,
-        color 0.5s ease;
-}
-
-form button:hover {
-    background: #2da77c;
-    color: #fff;
-}
-
-/* Footer styles */
 footer {
     text-align: center;
     padding: 1em 0;
-    background: #333;
-    color: #f4f4f9;
-    position: relative;
-    /* Changed from fixed to relative */
-    width: 100%;
-    bottom: 0;
-    transition: background-color 0.5s ease;
+    background-color: #222;
+    color: #fff;
 }
 
-footer:hover {
-    background-color: #2da77c;
-}
-
-footer .social-links {
-    margin-top: 1em;
-}
-
-footer .social-links a {
-    color: #3ed09a;
-    transition: color 0.5s ease;
-}
-
-footer .social-links a:hover {
-    color: #ffa500;
-    /* Orange color on hover */
-    text-decoration: underline;
-}
-
-/* Animation styles */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
