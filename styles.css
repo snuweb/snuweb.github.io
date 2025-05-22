@@ -1,87 +1,145 @@
-/* General styles */
-body {
+/* Reset default styles for consistency */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: left;
+    box-sizing: border-box;
 }
 
-/* Container for both content and image */
-.container {
-    display: flex;
-    flex-direction: row;
-    max-width: 1000px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 2em;
-    margin: 2em;
-}
-
-/* Content section */
-.content {
-    width: 60%;
-    padding-right: 2em;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin: 0;
-    color: #333;
-}
-
-.location {
-    font-size: 1.2em;
-    color: #777;
-    margin-bottom: 1.5em;
-}
-
-.journey {
-    font-size: 1.1em;
+/* Body styles with a professional background gradient */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.7;
-    color: #555;
-}
-
-/* Image container */
-.image-container {
+    background: linear-gradient(135deg, #e6ecef 0%, #f4f7fa 100%);
+    color: #2d3748;
+    padding: 40px 20px;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 40%;
+    align-items: flex-start;
 }
 
-.profile-pic {
-    width: 250px;
-    height: 250px;
+/* Container with a modern card-like appearance */
+.container {
+    max-width: 900px;
+    width: 100%;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading with a bold, professional look */
+h1 {
+    font-size: 2.5rem;
+    color: #1a202c;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+/* Location text styling */
+p:first-of-type {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Profile image with a modern circular frame */
+.profile-img {
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    border: 4px solid #e6fffa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+/* Paragraph styling for readability */
+p {
+    font-size: 1.05rem;
+    color: #4a5568;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Links with vibrant, professional styling */
+a {
+    color: #319795;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a:hover {
+    background-color: #e6fffa;
+    color: #2c7a7b;
+    text-decoration: none;
+}
+
+/* Highlighted link section for GitHub and LinkedIn */
+p:last-of-type {
+    margin-top: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+p:last-of-type a {
+    margin: 0 10px;
+    display: inline-block;
 }
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
     .container {
-        flex-direction: column;
-        padding: 1em;
-    }
-
-    .content, .image-container {
-        width: 100%;
-    }
-
-    .image-container {
-        margin-bottom: 1.5em;
+        padding: 20px;
+        border-radius: 12px;
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 2rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    p {
+        font-size: 1rem;
     }
 }
 
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    p:last-of-type a {
+        display: block;
+        margin: 10px 0;
+    }
+}
